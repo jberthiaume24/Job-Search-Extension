@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Data</title>
+  <link rel="stylesheet" type="text/css" href="bin/css/style.css">
+  <!--
+    Author: Mihir Patel
+    Description: This is the HTML document for displaying application data.
+  -->
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-wrapper">
+      <ul>
+        <!-- Home Button -->
+        <li>
+          <a href="index.html">
+            <img class="icon-home" src="bin/img/home.png" alt="Home">
+          </a>
+        </li>
+        <!-- Toggle View Button -->
+        <li>
+          <a href="#" id="toggleButton">
+            <img class="icon-user" src="bin/img/toggle.png" alt="Toggle View">
+          </a>
+        </li>
+        <!-- Download CSV Button -->
+        <li>
+          <button id="downloadCsvBtn">Download CSV</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Decorative SVG Background -->
+  <svg viewbox="0 0 1440 320">
+    <path fill="#4285f4" fill-opacity="1" d="M0,192L48,170.7C96,149,192,107,288,112C384,117,480,171,576,197.3C672,224,768,224,864,197.3C960,171,1056,117,1152,101.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+  </svg>
+
+  <!-- Main Content Container -->
+  <div class="container">
+    <div class="container-wrapper">
+      <!-- Application Statistics View -->
+      <div id="statsView" class="table-view">
+        <h2>Application Data Summary</h2>
+        <table id="summaryTable">
+          <thead>
+            <tr>
+              <th>Total Applications</th>
+              <th>Total Pending Applications</th>
+              <th>Passing Rate</th>
+              <th>Failure Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="totalApplications"></td>
+              <td id="totalPendingApplications"></td>
+              <td id="passingRate"></td>
+              <td id="failureRate"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Company Applications Data View -->
+      <div id="companyView" class="table-view">
+        <h2>Company Applications Data</h2>
+        <div class="container-wrapper">
+          <table id="companyTable">
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Total App.</th>
+                <th>Passed App.</th>
+                <th>Rejected App.</th>
+                <th>Pending App.</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript File for Popup Functionality -->
+  <script src="popup.js"></script>
+</body>
+</html>
+
+
+<!-- Containers for fetched emails (feature was dropped)
+<div class="container">
+  <h1>Gmail API Hello World</h1>
+  <button id="fetchEmails">Fetch Emails</button>
+
+  <h2 id="emailsContainer">Fetched Emails:</h2>
+  <div></div>
+</div>
+-->

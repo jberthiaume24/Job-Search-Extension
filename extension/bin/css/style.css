@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4285f4;
+  overflow: hidden;
+  min-width: 500px;
+  min-height: 500px;
+  position: relative;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.nav-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-wrapper ul li {
+  display: inline-block;
+}
+
+.icon-home,
+.icon-user {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  margin-right: 20px;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 700px;
+  margin: 80px auto 20px;
+  overflow: auto;
+}
+
+.container-wrapper {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+h1 {
+  color: #4285f4;
+  font-size: 23px;
+  user-select: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h2 {
+  color: #4285f4;
+  font-size: 24px;
+  user-select: none;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #2a66d9;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  max-height: 50vh;
+}
+
+.table-view {
+  display: none;
+}
+
+#statsView {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #4285f4;
+  color: white;
+}
+
+td {
+  word-wrap: break-word;
+}
+
+/* Styles for the toggle switch */
+
+/* Added styles for companyView table container */
+#companyView .container-wrapper {
+  max-height: 300px; /* Adjust as necessary */
+  overflow-y: auto;
+}

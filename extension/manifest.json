@@ -1,0 +1,31 @@
+{
+  "name": "Job Search Extension",
+  "version": "0.1.0",
+  "description": "Interactive job search extension that updates a remote database with job application info and displays statistics back",
+  "manifest_version": 3,
+  "author": "Mihir Patel, Jacob Wisniewski, Joshua Berthiaume, Mustafa Syed",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Job Search Extension"
+  },
+  "permissions": [
+    "identity",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://careeroptiwise.com/*",
+    "https://careeroptiwise.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "oauth2": {
+    "client_id": "",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.send",
+      "https://www.googleapis.com/auth/userinfo.email",
+      "profile"
+    ]
+  }
+}

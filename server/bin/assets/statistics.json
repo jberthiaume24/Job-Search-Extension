@@ -1,0 +1,44 @@
+[
+  {
+    "clientID": "AbCdEf",
+    "total_apps": 4,
+    "total_pending_apps": 3,
+    "pass_rate": 0.25
+  },
+  {
+    "clientID": "1a2b3c",
+    "total_apps": 2,
+    "total_pending_apps": 0,
+    "pass_rate": 0.5
+  },
+  {
+    "clientID": "XyZ123",
+    "total_apps": 5,
+    "total_pending_apps": 3,
+    "pass_rate": 0.4
+  },
+  {
+    "clientID": "4d5e6f",
+    "total_apps": 2,
+    "total_pending_apps": 0,
+    "pass_rate": 0.5
+  },
+  {
+    "clientID": "GhIjKl",
+    "total_apps": 2,
+    "total_pending_apps": 1,
+    "pass_rate": 0.5
+  },
+  {
+    "clientID": "7M8N9o",
+    "total_apps": 3,
+    "total_pending_apps": 1,
+    "pass_rate": 0.33
+  },
+  {
+    "clientID": "106872304742598872700",
+    "total_apps": 3,
+    "total_pending_apps": 1,
+    "pass_rate": 0.67
+  }
+]
